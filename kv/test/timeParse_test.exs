@@ -8,6 +8,6 @@ defmodule TimeParseTest do
     end
 
     test "converting hours/minutes tuple to seconds" do
-        assert TimeParse.toSeconds({9, 12}) == 33120
+        assert TimeParse.to_seconds({9, 12}) == 33120
     end
 end

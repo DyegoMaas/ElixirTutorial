@@ -7,7 +7,7 @@ defmodule TimeParse do
         {hours, minutes}
     end
 
-    def toSeconds({hours, minutes}) do
+    def to_seconds({hours, minutes}) do
         hours * 3600 + minutes * 60
     end
 end
