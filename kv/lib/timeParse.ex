@@ -1,9 +1,11 @@
 defmodule TimeParse do
+    @moduledoc false
+
     def parse(completed) do
         parts = String.split(completed, [":"])
         
-        {hours, _} = Enum.at(parts, 0) |> Integer.parse
-        {minutes, _} = Enum.at(parts, 1) |> Integer.parse
+        {hours, _} = parts |> Enum.at(0) |> Integer.parse
+        {minutes, _} = parts |> Enum.at(1) |> Integer.parse        
         {hours, minutes}
     end
 
